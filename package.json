@@ -1,0 +1,33 @@
+{
+  "name": "turing-widget-host",
+  "version": "0.1.0",
+  "description": "a host for the widget that we're packing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --config webpack.config.js",
+    "serve": "webpack-dev-server --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulca/turing-widget-host.git"
+  },
+  "author": "Paul Campbell <paul@rslw.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulca/turing-widget-host/issues"
+  },
+  "homepage": "https://github.com/paulca/turing-widget-host#readme",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "@babel/runtime": "^7.0.0-beta.55",
+    "babel-loader": "^8.0.0-beta.4",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.1.5"
+  }
+}
