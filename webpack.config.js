@@ -1,38 +1,39 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist'
-  },
+  mode: "development",
+  entry: "./src/index.js",
+  devtool: "inline-source-map",
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist")
+  },
+  devServer: {
+    overlay: true
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader' },
+          { loader: "style-loader" },
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               modules: true
             }
           },
-          { loader: 'sass-loader' }
+          { loader: "sass-loader" }
         ]
       },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env'],
-            plugins: ['@babel/plugin-transform-runtime']
+            presets: ["@babel/preset-env"],
+            plugins: ["@babel/plugin-transform-runtime"]
           }
         }
       }

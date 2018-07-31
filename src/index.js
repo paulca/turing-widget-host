@@ -1,3 +1,2 @@
 import widgetComponent from "turing-widget"
-
-console.log(widgetComponent)
+widgetComponent("What about you, big man, here we go? Ah. right.")

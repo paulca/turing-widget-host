@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --config webpack.config.js",
-    "serve": "webpack-dev-server --config webpack.config.js"
+    "build": "webpack",
+    "serve": "webpack-serve ./webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,15 +19,15 @@
   },
   "homepage": "https://github.com/paulca/turing-widget-host#readme",
   "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.55"
+  },
+  "devDependencies": {
     "@babel/core": "^7.0.0-beta.55",
     "@babel/plugin-transform-runtime": "^7.0.0-beta.55",
     "@babel/preset-env": "^7.0.0-beta.55",
-    "@babel/runtime": "^7.0.0-beta.55",
     "babel-loader": "^8.0.0-beta.4",
     "webpack": "^4.16.3",
-    "webpack-cli": "^3.1.0"
-  },
-  "devDependencies": {
-    "webpack-dev-server": "^3.1.5"
+    "webpack-cli": "^3.1.0",
+    "webpack-serve": "^2.0.2"
   }
 }
