@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/paulca/turing-widget-host#readme",
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.55"
+    "@babel/runtime": "^7.0.0-beta.55",
+    "axios": "^0.18.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.55",
