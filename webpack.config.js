@@ -8,8 +8,8 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist")
   },
-  devServer: {
-    overlay: true
+  serve: {
+    port: 4057
   },
   module: {
     rules: [
